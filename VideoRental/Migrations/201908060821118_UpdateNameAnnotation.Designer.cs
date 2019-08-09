@@ -7,13 +7,13 @@ namespace VideoRental.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class InitialModel : IMigrationMetadata
+    public sealed partial class UpdateNameAnnotation : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialModel));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(UpdateNameAnnotation));
         
         string IMigrationMetadata.Id
         {
-            get { return "201908020130438_InitialModel"; }
+            get { return "201908060821118_UpdateNameAnnotation"; }
         }
         
         string IMigrationMetadata.Source

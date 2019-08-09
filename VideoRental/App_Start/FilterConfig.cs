@@ -8,6 +8,9 @@ namespace VideoRental
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
             filters.Add(new HandleErrorAttribute());
+
+            // To require HTTPS requests
+            filters.Add(new RequireHttpsAttribute());
         }
     }
 }

@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
+using VideoRental.Models;
 
-namespace VideoRental.Models
+namespace VideoRental.Dtos
 {
-    public class Customer
+    public class CustomerDto
     {
         public int Id { get; set; }
 
@@ -14,13 +15,9 @@ namespace VideoRental.Models
         [StringLength(300)]
         public string Name { get; set; }
         public bool IsSubscribedToNewsletter { get; set; }
-        public MembershipType MembershipType { get; set; }
-
-        [Display(Name = "Membership Type")]
         public byte MembershipTypeId { get; set; }
 
-        [Display(Name = "Date of Birth")]
-        [Min18YearIfAMember]
+        //[Min18YearIfAMember]
         public DateTime? Birthdate { get; set; }
     }
 }
